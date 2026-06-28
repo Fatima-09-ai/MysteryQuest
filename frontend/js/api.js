@@ -1,1 +1,1 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://calm-spontaneity-production-9a82.up.railway.app/api";
