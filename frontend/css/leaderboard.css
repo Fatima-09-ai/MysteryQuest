@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(rgba(5,5,5,.93),rgba(5,5,5,.95)),
+    url("../assets/images/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:60px auto;
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-family:'Cinzel',serif;
+
+    color:#f5d98a;
+
+    margin-bottom:40px;
+
+    letter-spacing:2px;
+
+    text-shadow:0 0 15px rgba(212,175,55,.2);
+
+}
+
+/* ================= TABLE ================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:rgba(20,20,20,.88);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 0 35px rgba(0,0,0,.6);
+
+}
+
+th{
+
+    background:linear-gradient(135deg,#6b0f1a,#99162a);
+
+    padding:18px;
+
+    font-size:17px;
+
+    color:white;
+
+    letter-spacing:1px;
+
+}
+
+td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    color:#ddd;
+
+    transition:.3s;
+
+}
+
+/* Row Hover */
+
+tr:hover td{
+
+    background:#1a1a1a;
+
+}
+
+/* Alternate Rows */
+
+tr:nth-child(even){
+
+    background:rgba(255,255,255,.02);
+
+}
+
+/* ================= TOP PLAYERS ================= */
+
+tr:nth-child(2){
+
+    background:rgba(212,175,55,.15);
+
+    font-weight:bold;
+
+}
+
+tr:nth-child(3){
+
+    background:rgba(192,192,192,.12);
+
+    font-weight:bold;
+
+}
+
+tr:nth-child(4){
+
+    background:rgba(205,127,50,.12);
+
+    font-weight:bold;
+
+}
+
+/* ================= RANK COLUMN ================= */
+
+td:first-child{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#f5d98a;
+
+}
+
+/* ================= ANIMATION ================= */
+
+table{
+
+    animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.container{
+
+width:95%;
+
+}
+
+table{
+
+font-size:14px;
+
+}
+
+th,
+td{
+
+padding:12px;
+
+}
+
+}
+.subtitle{
+
+text-align:center;
+margin-bottom:40px;
+color:#bdbdbd;
+
+}
+
+/* ================= PODIUM ================= */
+
+.podium{
+
+display:flex;
+justify-content:center;
+align-items:flex-end;
+gap:25px;
+margin-bottom:50px;
+flex-wrap:wrap;
+
+}
+
+.winner{
+
+background:rgba(20,20,20,.90);
+
+padding:25px;
+
+border-radius:20px;
+
+width:220px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.06);
+
+transition:.3s;
+
+}
+
+.winner:hover{
+
+transform:translateY(-8px);
+
+}
+
+.first{
+
+height:260px;
+
+border:2px solid gold;
+
+}
+
+.second{
+
+height:220px;
+
+border:2px solid silver;
+
+}
+
+.third{
+
+height:200px;
+
+border:2px solid peru;
+
+}
+
+.medal{
+
+font-size:50px;
+
+margin-bottom:15px;
+
+}
+
+.tableCard{
+
+background:rgba(20,20,20,.88);
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 0 25px rgba(0,0,0,.4);
+
+}
+
+button{
+
+display:block;
+margin:30px auto;
+padding:15px 35px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+font-size:16px;
+background:linear-gradient(135deg,#6b0f1a,#99162a);
+color:white;
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+}

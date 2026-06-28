@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Puzzle | Mystery Quest</title>
+
+    <link rel="stylesheet" href="css/puzzle.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="caseHeader">
+
+            <h3>
+                <i class="fa-solid fa-folder-open"></i>
+                Confidential Case File
+            </h3>
+
+            <span class="badge">
+                ACTIVE
+            </span>
+
+        </div>
+
+        <hr>
+
+        <h1 id="title">
+
+            Loading...
+
+        </h1>
+
+        <div class="caseBox">
+
+            <h3>
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                Case Description
+
+            </h3>
+
+            <p id="description"></p>
+
+        </div>
+
+        <div class="infoRow">
+
+            <div class="infoCard">
+
+                <h4>
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Difficulty
+
+                </h4>
+
+                <p id="difficulty"></p>
+
+            </div>
+
+            <div class="infoCard">
+
+                <h4>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    Reward
+
+                </h4>
+
+                <p>
+
+                    Mystery Points
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <button id="hintBtn">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            Reveal Hint
+
+        </button>
+
+        <div class="hintBox">
+
+            <p id="hint"></p>
+
+        </div>
+
+        <input
+            type="text"
+            id="answer"
+            placeholder="Enter your investigation answer...">
+
+        <button id="submitBtn">
+
+            <i class="fa-solid fa-key"></i>
+
+            Submit Evidence
+
+        </button>
+
+        <button
+            class="playBtn"
+            onclick="window.location='dashboard.html'">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Back to Dashboard
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/puzzles.js"></script>
+
+
+
+
+</body>
+
+</html>
+```

@@ -1,0 +1,212 @@
+/* ================================
+   Mystery Quest - Home Page
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:#fff;
+
+    background:
+    linear-gradient(rgba(5,5,5,.88),rgba(5,5,5,.92)),
+    url("../assets/images/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+}
+
+/* Hero Section */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+/* Glass Card */
+
+.overlay{
+
+    width:700px;
+
+    text-align:center;
+
+    padding:60px;
+
+    background:rgba(20,20,20,.82);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 0 40px rgba(0,0,0,.65);
+
+    animation:fadeUp 1s ease;
+
+}
+
+/* Title */
+
+h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:65px;
+
+    letter-spacing:3px;
+
+    color:#f5e6b8;
+
+    margin-bottom:20px;
+
+    text-shadow:0 0 20px rgba(212,175,55,.25);
+
+}
+
+/* Subtitle */
+
+p{
+
+    color:#d0d0d0;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* Buttons */
+
+button{
+
+    padding:16px 42px;
+
+    margin:10px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    color:white;
+
+    background:
+    linear-gradient(135deg,#6b0f1a,#97182a);
+
+    box-shadow:
+    0 8px 20px rgba(107,15,26,.45);
+
+}
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    background:
+    linear-gradient(135deg,#97182a,#c1263f);
+
+    box-shadow:
+    0 12px 30px rgba(151,24,42,.6);
+
+}
+
+/* Secondary Button */
+
+button:last-child{
+
+    background:#1a1a1a;
+
+    border:1px solid #6b0f1a;
+
+}
+
+button:last-child:hover{
+
+    background:#6b0f1a;
+
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.overlay{
+
+    width:95%;
+
+    padding:35px;
+
+}
+
+h1{
+
+    font-size:42px;
+
+}
+
+p{
+
+    font-size:17px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+}

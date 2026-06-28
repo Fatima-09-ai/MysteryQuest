@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Leaderboard | Mystery Quest</title>
+
+    <link rel="stylesheet" href="css/leaderboard.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+
+        🏆 Detective Hall of Fame
+
+    </h1>
+
+    <p class="subtitle">
+
+        The greatest detectives who have solved the most mysteries.
+
+    </p>
+
+    <!-- Top 3 Podium -->
+
+    <div class="podium">
+
+        <div class="winner second">
+
+            <div class="medal silver">
+
+                🥈
+
+            </div>
+
+            <h3>Second Place</h3>
+
+            <p>Elite Detective</p>
+
+        </div>
+
+        <div class="winner first">
+
+            <div class="medal gold">
+
+                👑
+
+            </div>
+
+            <h2>Champion</h2>
+
+            <p>Master Detective</p>
+
+        </div>
+
+        <div class="winner third">
+
+            <div class="medal bronze">
+
+                🥉
+
+            </div>
+
+            <h3>Third Place</h3>
+
+            <p>Senior Detective</p>
+
+        </div>
+
+    </div>
+
+    <div class="tableCard">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>#</th>
+
+                    <th>
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Detective
+
+                    </th>
+
+                    <th>
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        Level
+
+                    </th>
+
+                    <th>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        Points
+
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="leaderboardBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <br>
+
+    <button onclick="window.location='dashboard.html'">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back to Dashboard
+
+    </button>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/leaderboard.js"></script>
+
+</body>
+
+</html>
+```

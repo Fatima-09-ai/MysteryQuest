@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Control Center | Mystery Quest</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+
+        🛠 Mystery Quest Admin Panel
+
+    </h1>
+
+    <p class="subtitle">
+
+        Manage puzzles and keep the investigation running.
+
+    </p>
+
+    <!-- Dashboard Cards -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-puzzle-piece fa-2x"></i>
+
+            <h3>Total Puzzles</h3>
+
+            <h2>11+</h2>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-layer-group fa-2x"></i>
+
+            <h3>Levels</h3>
+
+            <h2>11</h2>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-user-secret fa-2x"></i>
+
+            <h3>Game Status</h3>
+
+            <h2>Active</h2>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <button id="refreshBtn">
+
+        <i class="fa-solid fa-rotate"></i>
+
+        Refresh Puzzles
+
+    </button>
+
+    <br><br>
+
+    <!-- Puzzle Table -->
+
+    <div class="tableCard">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Level</th>
+
+                    <th>Title</th>
+
+                    <th>Difficulty</th>
+
+                    <th>Reward</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="puzzleTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <br><br>
+
+    <!-- Add Puzzle -->
+
+    <div class="formCard">
+
+        <h2>
+
+            <i class="fa-solid fa-circle-plus"></i>
+
+            Add New Puzzle
+
+        </h2>
+
+        <form id="addPuzzleForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Puzzle Title"
+                required>
+
+            <textarea
+                id="description"
+                placeholder="Puzzle Description"
+                required>
+
+            </textarea>
+
+            <input
+                type="text"
+                id="hint"
+                placeholder="Hint"
+                required>
+
+            <input
+                type="text"
+                id="answer"
+                placeholder="Correct Answer"
+                required>
+
+            <select id="difficulty">
+
+                <option>Easy</option>
+
+                <option>Medium</option>
+
+                <option>Hard</option>
+
+            </select>
+
+            <input
+                type="number"
+                id="rewardPoints"
+                placeholder="Reward Points"
+                required>
+
+            <input
+                type="number"
+                id="level"
+                placeholder="Level Number"
+                required>
+
+            <button type="submit">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Puzzle
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <br>
+
+    <button onclick="window.location='dashboard.html'">
+
+        <i class="fa-solid fa-house"></i>
+
+        Back to Dashboard
+
+    </button>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>
+```
