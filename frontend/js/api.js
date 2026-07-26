@@ -1,1 +1,1 @@
-const API_URL = "https://mysteryquest-production.up.railway.app/api";
+const API_URL = "/api";
